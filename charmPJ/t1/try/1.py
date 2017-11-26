@@ -36,7 +36,4 @@ def changeint(bool):
     bool[0] += 1
 
 if __name__ == '__main__':
-    var = 1
-    changeint([var])
-    print(var)
-    pass
+    print([[0]*5])

@@ -24,7 +24,7 @@ with tf.Session() as sess:
 '''
 class FLAGS:
     pass
-FLAGS.directory = "tmp/data/"
+FLAGS.directory = "C:/Users/one/Documents/work/wind/charmPJ/t1/tmp/data/"
 FLAGS.learning_rate = 0.0001
 FLAGS.num_epochs = 100
 FLAGS.batch_size = 100
@@ -84,16 +84,17 @@ def _int64_feature(value):
 def _bytes_feature(value):   
     return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
 
-def read_and_decode(filename_queue): 
-    # 输入文件名队列  
-    reader = tf.TFRecordReader() 
-    _, serialized_example = reader.read(filename_queue)   
-    features = tf.parse_single_example( # 解析example      
-        serialized_example,      
-        # 必须写明features里面的key的名称     
-        features={        
-            'image_raw': tf.FixedLenFeature([784], tf.float32), # 图片是string类型
-            'label': tf.FixedLenFeature([10], tf.float32),  # 标记是int64类型
+
+def read_and_decode( filename_queue):
+    # 输入文件名队列
+    reader = tf.TFRecordReader()
+    _, serialized_example = reader.read(filename_queue)
+    features = tf.parse_single_example(  # 解析example
+        serialized_example,
+        # 必须写明features里面的key的名称
+        features={
+            'train/kxian': tf.FixedLenFeature([5 * 242 * 5], tf.float32),  # 图片是string类型
+            'train/label': tf.FixedLenFeature([2], tf.int64),  # 标记是int64类型
         })
     '''
     # 对于BytesList，要重新进行解码，把string类型的0维Tensor变成uint8类型的一维Tensor   
@@ -104,8 +105,8 @@ def read_and_decode(filename_queue):
     image = tf.cast(image, tf.float32) * (1./ 255) - 0.5   
     # 把标记从uint8类型转换为int32类型  
     # label张量的形状为Tensor("input/Cast_1:0", shape=(), dtype=int32)   '''
-    image = tf.cast(features['image_raw'], tf.float32)
-    label = tf.cast(features['label'], tf.float32)
+    image = tf.cast(features['train/kxian'], tf.float32)
+    label = tf.cast(features['train/label'], tf.int64)
     return image, label
 
 def inputs(train, batch_size, num_epochs):
@@ -123,7 +124,7 @@ def inputs(train, batch_size, num_epochs):
     # 获取文件路径，即/tmp/data/train.tfrecords, /tmp/data/validation.records
     TRAIN_FILE = 'train.tfrecords'
     VALIDATION_FILE = 'validation.records'
-    filename = os.path.join(FLAGS.directory,
+    filename = os.path.join("C:\\Users\\one\\Documents\\GitHub\\command\\charmPJ\\t1\\mytrain\\",
                             TRAIN_FILE if train else VALIDATION_FILE)
     with tf.name_scope('input'):
         # tf.train.string_input_producer 返回一个QueueRunner，里面有一个FIFOQueue
@@ -133,7 +134,7 @@ def inputs(train, batch_size, num_epochs):
     # 随机化example，并把它们规整成batch_size 大小
     # tf.train.shuffle_batch 生成了RandomShuffleQueue，并开启两个线程
     images, sparse_labels = tf.train.shuffle_batch(
-        [image, label], batch_size=batch_size if train else 5000, num_threads=2,
+        [[1.0] * 784, [1.0] * 10], batch_size=batch_size if train else 5000, num_threads=2,
         capacity=1000 + 3 * batch_size,
         min_after_dequeue=1000)#留下一部分队列，来保证每次有足够的数据做随机打乱
     return images, sparse_labels
@@ -149,83 +150,53 @@ def inputs2(train, batch_size, num_epochs):
     * labels： 类型int32，形状[batch_size]，范围 [0, mnist.NUM_CLASSES]
     注意tf.train.QueueRunner 必须用tf.train.start_queue_runners()来启动线程
     """
+    cwd = os.getcwd()
+    mdirectory = 'C:/Users/one/Documents/work/wind/charmPJ/t1/tmp/data/'
     if not num_epochs: num_epochs = None
     # 获取文件路径，即/tmp/data/train.tfrecords, /tmp/data/validation.records
-    TRAIN_FILE = 'train.tfrecords'
+    TRAIN_FILE = 'mtrain.tfrecords'
     VALIDATION_FILE = 'validation.records'
-    filename = os.path.join(FLAGS.directory,
+    filename = os.path.join(mdirectory,
                             TRAIN_FILE if train else VALIDATION_FILE)
     with tf.name_scope('input'):
         # tf.train.string_input_producer 返回一个QueueRunner，里面有一个FIFOQueue
         filename_queue = tf.train.string_input_producer(
-            [filename], num_epochs=num_epochs) # 如果样本量很大，可以分成若干文件，把文件名列表传入
+            [filename], num_epochs=num_epochs)  # 如果样本量很大，可以分成若干文件，把文件名列表传入
     image, label = read_and_decode(filename_queue)
     # 随机化example，并把它们规整成batch_size 大小
     # tf.train.shuffle_batch 生成了RandomShuffleQueue，并开启两个线程
     images, sparse_labels = tf.train.shuffle_batch(
-        [image, label], batch_size=batch_size if train else 5000, num_threads=2,
-        capacity=1000 + 3 * batch_size,
-        min_after_dequeue=1000) # 留下一部分队列，来保证每次有足够的数据做随机打乱
+        [[1.0] * 25, [1.0] * 2], batch_size=batch_size if train else 5000, num_threads=2,
+        capacity=100,
+        min_after_dequeue=3)  # 留下一部分队列，来保证每次有足够的数据做随机打乱
     return images, sparse_labels
 
 def run_training():
-    with tf.Graph().as_default():
-        # 输入images 和labels
-        images, labels = inputs(train=True, batch_size=FLAGS.batch_size,num_epochs=1)
-        #测试数据
-        data_sets = input_data.read_data_sets("MNIST_data/", one_hot=True)
-        '''# 构建一个从推理模型来预测数据的图
-        logits = mnist.inference(images,
-                                 FLAGS.hidden1,
-                                 FLAGS.hidden2)
-        loss = mnist.loss(logits, labels) # 定义损失函数
-        # Add to the Graph operations that train the model.
-        train_op = mnist.training(loss, FLAGS.learning_rate)'''
+    # 输入images 和labels
+    images, labels = inputs(train=True, batch_size=FLAGS.batch_size,num_epochs=1)
 
-        #x = tf.placeholder("float", [None, 784])
-        x = images
-        W = tf.Variable(tf.zeros([784,10]))
-        b = tf.Variable(tf.zeros([10]))
-        y = tf.nn.softmax(tf.matmul(x,W) + b)
-        #y_ = tf.placeholder("float", [None,10])
-        y_ = labels
-        cross_entropy = -tf.reduce_sum(y_*tf.log(y))
-        train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+    # 归入tf.GraphKeys.LOCAL_VARIABLES 集合中，必须单独用initialize_local_variables()初始化
+    init_op = tf.group(tf.global_variables_initializer(),
+                       tf.local_variables_initializer())
+    sess = tf.InteractiveSession()
+    sess.run(init_op)
+    # Start input enqueue threads.
+    coord = tf.train.Coordinator()
+    threads = tf.train.start_queue_runners(sess=sess, coord=coord)
+    #input()
+    #sess.run(train_step)
+    step = 0
+    while not coord.should_stop(): # 进入永久循环
+        start_time = time.time()
+        #_, loss_value = sess.run([train_op, loss])
+        val, l = sess.run([images, labels])
+        # 我们也可以根据需要对val， l进行处理
+        # l = to_categorical(l, 12)
+        print(val.shape, l)
+        duration = time.time() - start_time
+        # 每100 次训练输出一次结果
+        step += 1
 
-        y1 = tf.nn.softmax(tf.matmul(data_sets.test.images,W) + b)
-        correct_prediction = tf.equal(tf.argmax(y1,1), tf.argmax(data_sets.test.labels,1))
-        accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
-
-
-        # 初始化参数，特别注意：string_input_producer 内部创建了一个epoch 计数变量，
-        # 归入tf.GraphKeys.LOCAL_VARIABLES 集合中，必须单独用initialize_local_variables()初始化
-        init_op = tf.group(tf.global_variables_initializer(),
-                           tf.local_variables_initializer())
-        sess = tf.InteractiveSession()
-        sess.run(init_op)
-        # Start input enqueue threads.
-        coord = tf.train.Coordinator()
-        threads = tf.train.start_queue_runners(sess=sess, coord=coord)
-        #input()
-        #sess.run(train_step)
-        try:
-            step = 0
-            while not coord.should_stop(): # 进入永久循环
-                start_time = time.time()
-                #_, loss_value = sess.run([train_op, loss])
-                sess.run(train_step)
-                duration = time.time() - start_time
-                # 每100 次训练输出一次结果
-                if step % 100 == 0:
-                    print (sess.run(accuracy))
-                step += 1
-
-        except tf.errors.OutOfRangeError:
-            print('Done training for %d epochs, %d steps.' % (FLAGS.num_epochs, step))
-        finally:
-            coord.request_stop() # 通知其他线程关闭
-        coord.join(threads)
-        sess.close()
         
 
 

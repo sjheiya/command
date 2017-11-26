@@ -32,7 +32,7 @@
       <file leaf-file-name="_try.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pycharm/_try.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
+            <state relative-caret-position="2139">
               <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="63" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -41,47 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jrTry_2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/t1/jrTry_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#13119#13490#1" expanded="false" />
-                <marker date="1511622798518" expanded="true" signature="2442:3659" ph="CREATE TABLE... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="3810:3824" ph="SELECT * FRO... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="3810:3825" ph="SELECT * FRO... " />
-                <marker date="1511622798518" expanded="true" signature="3810:3828" ph="SELECT * FRO... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="5171:5205" ph="SELECT * fro... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="5383:5717" ph="INSERT INTO `missing_value`... " />
-                <marker date="1511622798518" expanded="true" signature="6330:6512" ph="INSERT INTO `{0}`... " />
-                <marker date="1511622798518" expanded="true" signature="7503:7570" ph="SELECT missi... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="11516:12069" ph="SELECT close... " />
-                <marker date="1511622798518" expanded="true" signature="12093:12100" ph="SELECT conve... " />
-                <marker date="1511622798518" expanded="true" signature="12093:12280" ph="SELECT conve... " />
-                <marker date="1511622798518" expanded="true" signature="12093:12296" ph="SELECT conve... missing_value" />
-                <marker date="1511622798518" expanded="true" signature="15056:15102" ph="SELECT close... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="1299" column="0" lean-forward="false" selection-start-line="1299" selection-start-column="0" selection-end-line="1299" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jrTry_2 - 副本.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/jrTry_2 - 副本.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
+            <state relative-caret-position="1693">
+              <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -90,10 +54,31 @@
       <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/try/1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="874">
+              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
-                <marker date="1511615259412" expanded="true" signature="683:886" ph="SELECT DATE_... missing_value" />
+                <marker date="1511668433864" expanded="true" signature="683:886" ph="SELECT DATE_... missing_value" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jrTry_2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/t1/jrTry_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#13121#13492#1" expanded="false" />
+                <marker date="1511703770617" expanded="true" signature="2442:3659" ph="CREATE TABLE... missing_value" />
+                <marker date="1511703770617" expanded="true" signature="3810:3824" ph="SELECT * FRO... missing_value" />
+                <marker date="1511703770617" expanded="true" signature="3810:3825" ph="SELECT * FRO... " />
+                <marker date="1511703770617" expanded="true" signature="3810:3828" ph="SELECT * FRO... missing_value" />
+                <marker date="1511703770617" expanded="true" signature="5171:5205" ph="SELECT * fro... missing_value" />
+                <marker date="1511703770617" expanded="true" signature="5383:5717" ph="INSERT INTO `missing_value`... " />
+                <marker date="1511703770617" expanded="true" signature="6330:6512" ph="INSERT INTO `{0}`... " />
+                <marker date="1511703770617" expanded="true" signature="7503:7570" ph="SELECT missi... missing_value" />
               </folding>
             </state>
           </provider>
@@ -102,8 +87,8 @@
       <file leaf-file-name="module2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/module2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777">
-              <caret line="173" column="22" lean-forward="false" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="22" />
+            <state relative-caret-position="503">
+              <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="181" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -114,8 +99,8 @@
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9920">
-              <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,10 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self.cursor</find>
-      <find>today</find>
-      <find>sess</find>
-      <find>dequeue_many</find>
       <find>thread</find>
       <find>RandomShuffleQueue</find>
       <find>dequeue</find>
@@ -155,22 +136,26 @@
       <find>reshape</find>
       <find>records</find>
       <find>cwd</find>
-      <find>read_and_decode</find>
-      <find>inputs</find>
       <find>qr</find>
       <find>labels</find>
-      <find>coord</find>
       <find>progre</find>
       <find>128</find>
+      <find>run_training</find>
+      <find>inputs</find>
+      <find>read_and_decode</find>
+      <find>coo</find>
+      <find>tf.train</find>
+      <find>coord</find>
+      <find>inputs(</find>
     </findStrings>
     <replaceStrings>
       <replace>codes</replace>
     </replaceStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/t1/module2.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/t1/jrTry_2.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pycharm/1234.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/t1/module2.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -194,11 +179,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2760" />
-    <option name="height" value="1778" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1912" />
+    <option name="width" value="1936" />
+    <option name="height" value="2118" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -234,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,7 +253,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jrTry_2">
+  <component name="RunManager" selected="Python.module2">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,24 +292,6 @@
       <module name="charmPJ" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t1/try/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="_try" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="charmPJ" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pycharm/_try.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -384,20 +350,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="module2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/t1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="charmPJ" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t1/module2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python._try" />
-      <item index="1" class="java.lang.String" itemvalue="Python.jrTry_2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.jrTry_2 - 副本" />
+      <item index="0" class="java.lang.String" itemvalue="Python.jrTry_2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.demo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.jrTry_2 - 副本" />
+      <item index="4" class="java.lang.String" itemvalue="Python.module2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.jrTry_2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.jrTry_2 - 副本" />
-        <item index="3" class="java.lang.String" itemvalue="Python.demo" />
-        <item index="4" class="java.lang.String" itemvalue="Python._try" />
+        <item index="1" class="java.lang.String" itemvalue="Python.module2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.jrTry_2 - 副本" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -418,18 +401,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="-12" width="2760" height="1778" extended-state="6" />
+    <frame x="1912" y="0" width="1936" height="2118" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25338894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32989025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3985873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -438,6 +421,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -467,7 +451,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/t1/jrTry_2.py</url>
-          <line>500</line>
+          <line>518</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -486,29 +470,9 @@
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/t1/try/1.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/t1/jrTry_2.py</url>
-          <line>460</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py</url>
-          <line>887</line>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py</url>
-          <line>1118</line>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py</url>
-          <line>1299</line>
-          <option name="timeStamp" value="136" />
+          <url>file://$PROJECT_DIR$/t1/module2.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -521,7 +485,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="137" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -530,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19389">
           <caret line="847" column="28" lean-forward="false" selection-start-line="847" selection-start-column="28" selection-end-line="847" selection-end-column="28" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19389">
           <caret line="847" column="28" lean-forward="false" selection-start-line="847" selection-start-column="28" selection-end-line="847" selection-end-column="28" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19389">
           <caret line="847" column="28" lean-forward="false" selection-start-line="847" selection-start-column="28" selection-end-line="847" selection-end-column="28" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,9 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19389">
           <caret line="847" column="12" lean-forward="false" selection-start-line="847" selection-start-column="12" selection-end-line="848" selection-end-column="45" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,9 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19389">
           <caret line="847" column="12" lean-forward="false" selection-start-line="847" selection-start-column="12" selection-end-line="848" selection-end-column="45" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24863">
           <caret line="1085" column="21" lean-forward="false" selection-start-line="1085" selection-start-column="21" selection-end-line="1085" selection-end-column="21" />
-          <folding>
-            <element signature="e#157#177#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5980">
           <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9920">
-          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/t1/progressbar/widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -878,14 +815,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1941813764/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="4867" column="8" lean-forward="false" selection-start-line="4867" selection-start-column="8" selection-end-line="4867" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1941813764/builtins.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/progressbar/bar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -896,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pycharm/_try.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
+        <state relative-caret-position="2139">
           <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="63" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -904,46 +834,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t1/try/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1511615259412" expanded="true" signature="683:886" ph="SELECT DATE_... missing_value" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t1/module2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="173" column="22" lean-forward="false" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t1/jrTry_2 - 副本.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/google/protobuf/internal/python_message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="481" column="0" lean-forward="false" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="474" column="0" lean-forward="false" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -956,34 +850,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/t1/jrTry_2 - 副本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1693">
+          <caret line="113" column="40" lean-forward="true" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="2624" column="0" lean-forward="false" selection-start-line="2624" selection-start-column="0" selection-end-line="2624" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="1299" column="0" lean-forward="false" selection-start-line="1299" selection-start-column="0" selection-end-line="1299" selection-end-column="0" />
+        <state relative-caret-position="722">
+          <caret line="1118" column="66" lean-forward="true" selection-start-line="1118" selection-start-column="66" selection-end-line="1118" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t1/try/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding>
+            <marker date="1511668433864" expanded="true" signature="683:886" ph="SELECT DATE_... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t1/module2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="181" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/jrTry_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+        <state relative-caret-position="549">
+          <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#13119#13490#1" expanded="false" />
-            <marker date="1511622798518" expanded="true" signature="2442:3659" ph="CREATE TABLE... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="3810:3824" ph="SELECT * FRO... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="3810:3825" ph="SELECT * FRO... " />
-            <marker date="1511622798518" expanded="true" signature="3810:3828" ph="SELECT * FRO... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="5171:5205" ph="SELECT * fro... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="5383:5717" ph="INSERT INTO `missing_value`... " />
-            <marker date="1511622798518" expanded="true" signature="6330:6512" ph="INSERT INTO `{0}`... " />
-            <marker date="1511622798518" expanded="true" signature="7503:7570" ph="SELECT missi... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="11516:12069" ph="SELECT close... " />
-            <marker date="1511622798518" expanded="true" signature="12093:12100" ph="SELECT conve... " />
-            <marker date="1511622798518" expanded="true" signature="12093:12280" ph="SELECT conve... " />
-            <marker date="1511622798518" expanded="true" signature="12093:12296" ph="SELECT conve... missing_value" />
-            <marker date="1511622798518" expanded="true" signature="15056:15102" ph="SELECT close... " />
+            <element signature="e#13121#13492#1" expanded="false" />
+            <marker date="1511703770617" expanded="true" signature="2442:3659" ph="CREATE TABLE... missing_value" />
+            <marker date="1511703770617" expanded="true" signature="3810:3824" ph="SELECT * FRO... missing_value" />
+            <marker date="1511703770617" expanded="true" signature="3810:3825" ph="SELECT * FRO... " />
+            <marker date="1511703770617" expanded="true" signature="3810:3828" ph="SELECT * FRO... missing_value" />
+            <marker date="1511703770617" expanded="true" signature="5171:5205" ph="SELECT * fro... missing_value" />
+            <marker date="1511703770617" expanded="true" signature="5383:5717" ph="INSERT INTO `missing_value`... " />
+            <marker date="1511703770617" expanded="true" signature="6330:6512" ph="INSERT INTO `{0}`... " />
+            <marker date="1511703770617" expanded="true" signature="7503:7570" ph="SELECT missi... missing_value" />
           </folding>
         </state>
       </provider>

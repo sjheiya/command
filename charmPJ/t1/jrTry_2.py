@@ -254,9 +254,9 @@ class mtry():
         # 随机化example，并把它们规整成batch_size 大小
         # tf.train.shuffle_batch 生成了RandomShuffleQueue，并开启两个线程
         images, sparse_labels = tf.train.shuffle_batch(
-            [image[::242], label], batch_size=batch_size if train else 5000, num_threads=2,
-            capacity=1000 + 3 * batch_size,
-            min_after_dequeue=1)  # 留下一部分队列，来保证每次有足够的数据做随机打乱
+            [image[::10], label], batch_size=batch_size if train else 5000, num_threads=2,
+            capacity=3000 + 3 * batch_size,
+            min_after_dequeue=1000)  # 留下一部分队列，来保证每次有足够的数据做随机打乱
         return images, sparse_labels
 
     def getdata2db(self):
@@ -323,21 +323,30 @@ class mtry():
                 else:
                     raise InterruptedError(u"不应该呀")
 
-                if temp.__len__() == 242 * 5:
-                    labeltime = datetime.datetime(begintime.year, begintime.month, begintime.day, 15, 0,
-                                                  0) + datetime.timedelta(days=7)
-                    label = self.runsql(
-                        """SELECT close FROM `{0}` WHERE `time` = \'{1}\'""".format(self.inputscodes[i], labeltime))
-                    if label.__len__() == 1:
-                        t = int(label[0]["close"] > temp[-1][1])
+                if temp.__len__() == 242 * 6:
+                    """t = int(temp[-1-242][1] > temp[-1][1])
+                    temp = numpy.array(temp)
+                    temp = numpy.reshape(temp, (-1,)).tolist()
 
-                        temp = numpy.array(temp)
-                        temp = numpy.reshape(temp,(-1,)).tolist()
 
-                        feature = {"train/kxian":tf.train.Feature(float_list=tf.train.FloatList(value=temp)),
-                                   "train/label":tf.train.Feature(int64_list=tf.train.Int64List(value=[t, 1 - t]))}
-                        example = tf.train.Example(features = tf.train.Features(feature=feature))
-                        writer.write(example.SerializeToString())
+                    temp = temp[:5 * 242 * 5]
+
+                    feature = {"train/kxian": tf.train.Feature(float_list=tf.train.FloatList(value=temp)),
+                               "train/label": tf.train.Feature(int64_list=tf.train.Int64List(value=[t, 1 - t]))}
+                    example = tf.train.Example(features=tf.train.Features(feature=feature))
+                    writer.write(example.SerializeToString())
+                    break"""
+                    t = int(temp[-1 - 242][1] > temp[-1][1])
+                    temp = numpy.array(temp)
+                    temp = numpy.reshape(temp, (-1,)).tolist()
+
+                    temp = temp[:5 * 242 * 5]
+
+                    feature = {"train/kxian": tf.train.Feature(float_list=tf.train.FloatList(value=temp)),
+                               "train/label": tf.train.Feature(int64_list=tf.train.Int64List(value=[t, 1 - t]))}
+                    example = tf.train.Example(features=tf.train.Features(feature=feature))
+                    writer.write(example.SerializeToString())
+                    break
                 begintime += datetime.timedelta(days=1)
 
 
@@ -358,8 +367,8 @@ def main():
     imax = codes.split(",").__len__() - 1
     jmax = 29 - 14
     mytry.pre2inputs(codes)
-    batch_size = 1
-    kxian, labels = mytry.inputs(train=True, batch_size=batch_size, num_epochs=1)
+    batch_size = 128
+    kxian, labels = mytry.inputs(train=True, batch_size=batch_size, num_epochs=0)
 
     lr = 1e-3
     # 在训练和测试的时候，我们想用不同的 batch_size.所以采用占位符的方式
@@ -369,11 +378,11 @@ def main():
     # 每个时刻的输入特征是28维的，就是每个时刻输入一行，一行有 28 个像素
     input_size = 5
     # 时序持续长度为28，即每做一次预测，需要先输入28行
-    timestep_size = 5
+    timestep_size = 121
     # 每个隐含层的节点数
     hidden_size = 256
     # LSTM layer 的层数
-    layer_num = 2
+    layer_num = 16
     # 最后输出分类类别数量，如果是回归预测的话应该是 1
     class_num = 2
 
@@ -401,7 +410,7 @@ def main():
     lstm_cell = rnn.DropoutWrapper(cell=lstm_cell, input_keep_prob=1.0, output_keep_prob=keep_prob)
 
     # **步骤4：调用 MultiRNNCell 来实现多层 LSTM
-    mlstm_cell = rnn.MultiRNNCell([lstm_cell] * 2, state_is_tuple=True)
+    mlstm_cell = rnn.MultiRNNCell([lstm_cell] * layer_num, state_is_tuple=True)
 
     # **步骤5：用全零来初始化state
     init_state = mlstm_cell.zero_state(batch_size, dtype=tf.float32)
@@ -448,13 +457,21 @@ def main():
     correct_prediction = tf.equal(tf.argmax(y_pre, 1), tf.argmax(y, 1))
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
     print("@")
-    sess.run(tf.global_variables_initializer())
+    init_op = tf.group(tf.global_variables_initializer(),
+                       tf.local_variables_initializer())
+    sess.run(init_op)
+    print("@")
+    coord = tf.train.Coordinator()
+    threads = tf.train.start_queue_runners(sess=sess, coord=coord)
     print("@")
     progress = progressbar.ProgressBar(max_value=2000)
     for i in range(2000):
+        if coord.should_stop():
+            print("break")
+            break
         progress.update(i)
         # batch = mnist.train.next_batch(_batch_size)
-        if (i + 1) % 10 == 0:
+        if (i + 1) % 100 == 0:
             train_accuracy = sess.run(accuracy, feed_dict={keep_prob: 1.0})
             # 已经迭代完成的 epoch 数: mnist.train.epochs_completed
             print("Iter%d, step %d, training accuracy %g" % ((i + 1) * batch_size, (i + 1), train_accuracy))
@@ -463,6 +480,7 @@ def main():
         # 计算测试数据的准确率
         # print("test accuracy %g"% sess.run(accuracy, feed_dict={
         #    _X: mnist.test.images, y: mnist.test.labels, keep_prob: 1.0, batch_size:mnist.test.images.shape[0]}))
+
 
 
 if __name__ == '__main__':
